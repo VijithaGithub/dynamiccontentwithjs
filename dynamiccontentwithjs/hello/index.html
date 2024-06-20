@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color:cadetblue;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Content with JavaScript</h1>
+
+    <button class="accordion">What is Javascript</button>
+    <div class="panel">
+        <p>JavaScript is a programming language used to create dynamic content for websites. It achieves this by adding new HTML elements while modifying existing ones. Many coders enhance web development skills using JavaScript to create user-friendly and interactive websites.</p>
+    </div>
+
+    <button class="accordion">why did JavaScript come into existence</button>
+    <div class="panel">
+        <p>Initially, it was called Mocha, then changed to LiveScript before finally being named JavaScript. The language was designed to add interactivity to web pages and enable developers to create dynamic content. It was first implemented in the Netscape Navigator 2.0 browser.</p>
+    </div>
+
+    <button class="accordion">Application of JavaScript</button>
+    <div class="panel">
+        <p>JavaScript is a scripting language used to develop web pages. Developed in Netscape, JS allows developers to create a dynamic and interactive web page to interact with visitors and execute complex actions. It also enables users to load content into a document without reloading the entire page</p>
+    </div>
+
+    <h2>Fetch Data from API</h2>
+    <button id="fetchButton">Fetch Data</button>
+    <div id="apiData"></div>
+
+    <h2>Form Validation</h2>
+    <form id="sampleForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="displayUserInput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
